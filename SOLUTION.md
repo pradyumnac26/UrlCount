@@ -28,9 +28,12 @@ To run this we will need to install Java and Hadoop on our system. Since we did 
 
 - On Dataproc in Google Cloud Platform
 
-** SSH into the master node of your Google Cloud Dataproc cluster.
+1. SSH into the master node of your Google Cloud Dataproc cluster.
+   
 2. Clone the repository containing the UrlCount job.
+   
 3. Compile the code using the `make` command.
-4. Upload the JAR file to HDFS and run the Hadoop job using the appropriate commands to count and filter URLs
+   
+4.. Upload the JAR file to HDFS and run the Hadoop job using the appropriate commands to count and filter URLs
   
 
