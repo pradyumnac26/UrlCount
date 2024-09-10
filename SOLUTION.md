@@ -168,6 +168,8 @@ The **combiner** should only sum the counts and leave the filtering to the **red
 - **4 worker nodes** completed the job approximately **40% faster** than the 2-node setup, highlighting the advantage of parallel processing.
 - Increasing the number of nodes reduces the overall execution time, making the system more scalable and capable of handling larger workloads more efficiently.
 
+![Final URL Count Output](./URLCountOutput.png)
+
 
   
 
