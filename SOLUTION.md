@@ -138,5 +138,36 @@ In the **UrlCount** job, the reducer filters URLs that appear more than 5 times.
 ## Conclusion
 The **combiner** should only sum the counts and leave the filtering to the **reducer** to avoid data loss and ensure correct results.
 
+# Hadoop Job Output and Inference
+
+## Output from 2 Worker Nodes
+
+![Output from 2 Worker Nodes](./Output_2workernodes.png)
+
+### Inference:
+- The Hadoop job ran with **2 worker nodes** and took around **58.7 seconds** to complete.
+- The job processed **3979 map input records** and **2460 map output records**.
+- The **user CPU time** was **14.96 seconds**, which shows a moderate utilization of resources in the cluster.
+- This setup may take longer due to fewer worker nodes, leading to less parallelism.
+
+---
+
+## Output from 4 Worker Nodes
+
+![Output from 4 Worker Nodes](./Output_4workernodes.png)
+
+### Inference:
+- The Hadoop job ran with **4 worker nodes** and completed in around **34.6 seconds**.
+- The **user CPU time** was reduced to **12.45 seconds**, indicating better resource utilization due to the increased number of worker nodes.
+- The reduced execution time shows that adding more worker nodes improves performance by distributing the workload more efficiently, achieving faster processing.
+
+---
+
+## General Inference:
+- Comparing the results of the job executed on **2 worker nodes** and **4 worker nodes**, there is a noticeable improvement in performance with more nodes.
+- **4 worker nodes** completed the job approximately **40% faster** than the 2-node setup, highlighting the advantage of parallel processing.
+- Increasing the number of nodes reduces the overall execution time, making the system more scalable and capable of handling larger workloads more efficiently.
+
+
   
 
