@@ -23,11 +23,12 @@ Basically it has 3 phases :
 ## How it Runs
 
 - Local
+  
 To run this we will need to install Java and Hadoop on our system. Since we did it on CSEL it has these pre-installed. We first run the Makefile using make command which will compile the Java code. The Make prepare command prepares the input directories for HDFS. Then make run command uses the hadoop command to submit the UrlCount job to the Hadoop cluster or local Hadoop setup.
 
 - On Dataproc in Google Cloud Platform
 
-1. SSH into the master node of your Google Cloud Dataproc cluster.
+** SSH into the master node of your Google Cloud Dataproc cluster.
 2. Clone the repository containing the UrlCount job.
 3. Compile the code using the `make` command.
 4. Upload the JAR file to HDFS and run the Hadoop job using the appropriate commands to count and filter URLs
